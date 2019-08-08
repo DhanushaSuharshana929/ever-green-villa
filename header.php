@@ -1,4 +1,4 @@
-<header class="full-row header-1 nav-on-banner" id="header">
+<header class="full-row header-1 nav-on-banner header-top-color" id="header">
     <div class="top-header text-white icon-primary py-3">
         <div class="container">
             <div class="row">
@@ -36,7 +36,8 @@
                             <li class="nav-item"> <a class="nav-link" href="gallery.php">Gallery</a> </li>
                             <li class="nav-item"> <a class="nav-link" href="contact.php">Contact</a> </li>
                         </ul>
-                        <a class="btn-book btn-primary-bg ml-2" href="#">Booking Now</a> 
+                       
+                        <a class="btn btn-primary-bg ml-2" href="#">Booking Now</a> </div>
                     </div>
                 </nav>
             </div>

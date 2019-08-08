@@ -28,133 +28,9 @@
         <link rel="stylesheet" href="webfonts/flaticon/flaticon.css">
         <link href="css/custom.css" rel="stylesheet" type="text/css"/>
 
-        <title>Sinharaja Eco Villa | Accomadation</title>
+        <title>Evergreen Villa | Accomadation</title>
     </head>
     <body>
-        <!-- Color Settings -->
-        <div class="color-panel">
-            <div class="on-panel bg-primary"><img src="img/settings.png" alt=""></div>
-            <div class="panel-box"> <span class="panel-title">Light Colors Version</span>
-                <ul class="color-box">
-                    <li class="default" data-name="default" data-path="css/color.css" data-image="img/logo/logo.png" data-target="img/logo/logo2.png"></li>
-                    <li class="color_2" data-name="color_2" data-path="css/colors/color_2.css" data-image="img/logo/logo.png" data-target="img/logo/logo2.png"></li>
-                    <li class="color_3" data-name="color_3" data-path="css/colors/color_3.css" data-image="img/logo/logo.png" data-target="img/logo/logo2.png"></li>
-                    <li class="color_4" data-name="color_4" data-path="css/colors/color_4.css" data-image="img/logo/logo.png" data-target="img/logo/logo2.png"></li>
-                    <li class="color_5" data-name="color_5" data-path="css/colors/color_5.css" data-image="img/logo/logo.png" data-target="img/logo/logo2.png"></li>
-                    <li class="color_6" data-name="color_6" data-path="css/colors/color_6.css" data-image="img/logo/logo.png" data-target="img/logo/logo2.png"></li>
-                    <li class="color_7" data-name="color_7" data-path="css/colors/color_7.css" data-image="img/logo/logo.png" data-target="img/logo/logo2.png"></li>
-                </ul>
-            </div>
-            <div class="switcher_layout"> <span class="layout_title">Layout Style</span>
-                <div class="radio_check">
-                    <input type="checkbox" id="layout_type" name="layout" value="Yes">
-                    <label class="bg-primary text-left" for="layout_type"><span class="white_color">Full</span><span class="secondary_color">Box</span></label>
-                </div>
-            </div>
-            <div class="box_bg_style"> <span class="layout_title">Template Style</span>
-                <div class="button_group"> <a href="index-2.html" class="btn btn-primary  pull-left text-secondery">White Version</a> <a href="http://unicoderbd.com/theme/html/vilena/dark/index.php" class="btn pull-left text-secondery">Black Version</a> </div>
-            </div>
-            <div class="box_bg_style"> <span class="layout_title">Background pattern</span>
-                <div class="select_bg">
-                    <ul>
-                        <li>
-                            <input type="radio" name="radio" id="patrn1" value="pattern_1" />
-                            <label for="patrn1" class="radios pattern1"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn2" value="pattern_2" />
-                            <label for="patrn2" class="radios pattern2"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn3" value="pattern_3" />
-                            <label for="patrn3" class="radios pattern3"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn4" value="pattern_4" />
-                            <label for="patrn4" class="radios pattern4"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn5" value="pattern_5" />
-                            <label for="patrn5" class="radios pattern5"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn6" value="pattern_6" />
-                            <label for="patrn6" class="radios pattern6"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn7" value="pattern_7" />
-                            <label for="patrn7" class="radios pattern7"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn8" value="pattern_8" />
-                            <label for="patrn8" class="radios pattern8"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn9" value="pattern_9" />
-                            <label for="patrn9" class="radios pattern9"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn10" value="pattern_10" />
-                            <label for="patrn10" class="radios pattern10"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn11" value="pattern_11" />
-                            <label for="patrn11" class="radios pattern11"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn12" value="pattern_12" />
-                            <label for="patrn12" class="radios pattern12"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn13" value="pattern_13" />
-                            <label for="patrn13" class="radios pattern13"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn14" value="pattern_14" />
-                            <label for="patrn14" class="radios pattern14"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn15" value="pattern_15" />
-                            <label for="patrn15" class="radios pattern15"></label>
-                        </li>
-                    </ul>
-                </div>
-                <span class="layout_title">Background pattern</span>
-                <div class="select_bg">
-                    <ul>
-                        <li>
-                            <input type="radio" name="radio" id="bg_img1" value="body_bg_1" />
-                            <label for="bg_img1" class="radios body_image1"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="bg_img2" value="body_bg_2" />
-                            <label for="bg_img2" class="radios body_image2"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="bg_img3" value="body_bg_3" />
-                            <label for="bg_img3" class="radios body_image3"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="bg_img4" value="body_bg_4" />
-                            <label for="bg_img4" class="radios body_image4"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="bg_img5" value="body_bg_5" />
-                            <label for="bg_img5" class="radios body_image5"></label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="select_bg">
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="vilena_overlay" id="bg_over" value=""/>
-                            Overlay</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- End Color Settings -->
-
         <div id="page_wrapper">
             <div class="row">
                 <!-- Header 4 Section Start -->
@@ -208,16 +84,15 @@
                                         <p>Ligula at posuere leo dictumst ad sollicitudin. Magna congue, leo, eros curabitur interdum ante maecen facilisis per maecenas mattis enim in nostra libero pede mauris neque varius ad ad inceptos. Erat empor amet nisl scelerisque maecenas fringilla ad ridiculus gravida. Arcu dignissim eros commodo ornare eget. Ligula congue dolor placerat, eu nibh dis dui, penatibus ac praesent tellus montes, lerisque, vulputate eros eu maecenas lobortis per orci sit Penatibus mauris senectus vulputate tincidunt cras feugiat class tempus eget ridiculus vehicula dolor praesent. Hymenaeos. Venenatis non litora feugiat suspendisse rutrum hymenaeos taciti praesent ut velit. Cum pharetra nisl nisi. Laoreet Montes.</p>
                                         <p>Lorem suspendisse vestibulum dignissim sapien purus id massa. Dictumst. Fames commodo, metus. Parturient leo at aliquam. Tristique. Metus ultricies aliquam mi. Hendrerit libero malesuada dictumst, massa consequat Volutpat mattis condimentum ut aliquam. Magna litora augue purus class hymenaeos dis semper, suspendisse euismod vehicula vitae luctus nulla at orci nullam.</p>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                    <h3>Other Accomadation</h3>
+                                <h3 class="top-title">Other Accomadation</h3>
                                 <div class="row">
                                     <div class="col-md-12 col-lg-12">
-                                        <div class="post-item bg-white mb-4" style="padding-top: 25px;">
+                                        <div class="post-item bg-white mb-4">
                                             <div class="overlay-secondery-opacity-40"> <img src="img/blog/1.jpg" alt="Image not found!"></div>
-                                            <div class="post-detail p-4">
+                                            <div class="post-detail p-4" style="height: 10px;">
                                                 <h6 class="title pb-3"><a href="blog-classic-single.html">Double Room</a></h6>
                                             </div>
                                         </div>
@@ -225,15 +100,7 @@
                                     <div class="col-md-12 col-lg-12">
                                         <div class="post-item bg-white mb-4">
                                             <div class="overlay-secondery-opacity-40"> <img src="img/blog/1.jpg" alt="Image not found!"></div>
-                                            <div class="post-detail p-4">
-                                                <h6 class="title pb-3"><a href="blog-classic-single.html">Double Room</a></h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-12">
-                                        <div class="post-item bg-white mb-4">
-                                            <div class="overlay-secondery-opacity-40"> <img src="img/blog/1.jpg" alt="Image not found!"></div>
-                                            <div class="post-detail p-4">
+                                            <div class="post-detail p-4" style="height: 10px;">
                                                 <h6 class="title pb-3"><a href="blog-classic-single.html">Double Room</a></h6>
                                             </div>
                                         </div>
@@ -244,7 +111,6 @@
                         </div>
                     </div>
                 </section>
-
                 <!-- Footer Section Start -->
                 <?php include './footer.php'; ?>
                 <!-- Footer Section End --> 

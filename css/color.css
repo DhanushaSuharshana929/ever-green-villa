@@ -36,8 +36,9 @@ Theme Color All Codes Variable
  Overlay
  ==================================*/
 /* :root{
- 	--theme-overlay-secondery-color-4: rgba(0,204,51,0.2)
+ 	--theme-overlay-secondery-color-4: rgba(36, 32, 32, 0.7);
  }*/
+
  :root{
  	--theme-overlay-secondery-color-6: rgba(0,204,51,0.2)
  }
