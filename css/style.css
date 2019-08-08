@@ -580,8 +580,8 @@ footer .social-media li:hover a,
 ====================================================================*/
 
 #page_wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
     background-color: #fff;
     overflow: hidden !important;
     position: relative
@@ -3844,7 +3844,7 @@ ol{
 ====================================================================*/
 
 .post-detail .title {
-    line-height: 28px;
+    line-height: 0px;
 }
 
 

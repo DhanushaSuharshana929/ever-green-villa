@@ -6,11 +6,9 @@
                 <div class="mb-5">
                     <ul class="social-media m-auto d-table">
                         <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a></li>
                         <li><a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a></li>
-                        <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a></li>
-                        <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://www.viber.com/"><i class="fab fa-viber"></i></a></li>
                     </ul>
                 </div>
             </div>

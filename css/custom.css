@@ -32,3 +32,12 @@
 .excursion-des{
     text-align: justify;
 }
+.ex-color{
+    color: #fff;
+}
+.top-title{
+    padding-top: 20px;
+}
+.header-top-color{
+    color: rgba(36, 32, 32, 0.7);
+}

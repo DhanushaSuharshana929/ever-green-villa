@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="webfonts/flaticon/flaticon.css">
         <link href="css/custom.css" rel="stylesheet" type="text/css"/>
 
-        <title>Sinharaja Eco Villa | Accomadation</title>
+        <title>Evergreen Villa | Accomadation</title>
     </head>
     <body>
         <!-- Color Settings -->

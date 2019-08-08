@@ -40,7 +40,6 @@
         <!-- End Color Settings -->
         <div id="page_wrapper">
             <div class="row">
-
                 <!-- Header Section Start -->
                 <?php include 'header.php'; ?>
                 <!-- Header Section End --> 
@@ -59,7 +58,7 @@
                         <div class="row">
                             <div class="col-lg-7 col-md-12">
                                 <div class="main-title-area">
-                                    <h2 class="title mb-3">Sinharaja Eco Villa</h2>
+                                    <h2 class="title mb-3">Evergreen Villa</h2>
                                 </div>
                                 <span class="subtext text-secondary mb-4">Days Inn There you go</span>
                                 <p>Eros id Consequat, facilisis, eros ridiculus vehicula justo lacinia. Spaptent and aenean. Justo facilisi gravida nascetur quis rutrum nostra. Nisl quisqu all per. Ante platea aenean Nunc turpis tristique. Primis aliquet inceptos all seamper per. Posuere litora vulputate sem risus habit praesent ultric enim leo pulvinar enim arcu blandit sit. Natoq dis. Suspendisse nonummy pellentesque place. Malesuad aenean. Leo curabitur elementum ultr. Rhoncus fusce ac eu nunc cras euismod ad dignissim natoque. Penatib natoque arcu, sed sit.</p>
@@ -218,149 +217,97 @@
                     </div>
                 </section>
                 <!-- Blank Area End --> 
-
-                <section class="full-row bg-gray">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="main-title-area text-center">
-                                    <h2 class="title left-right-line mb-3">Activities</h2>
-                                </div>
-                                <span class="subtext text-secondary text-center mb-5 box-width">Everything except excess</span> </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="post-item-2 hover_zoom mb-4">
-                                    <div class="row">
-                                        <div class="col-xl-6 col-md-4">
-                                            <div class="overflow_hidden"><img src="img/height/1.jpg" alt="Image not found!"></div>
+                
+                                <section class="full-row bg-gray">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="main-title-area text-center">
+                                                    <h2 class="title left-right-line mb-3">Excursion</h2>
+                                                </div>
+                                                <span class="subtext text-secondary text-center mb-5 box-width">Everything except excess</span> </div>
                                         </div>
-                                        <div class="col-xl-6 col-md-8">
-                                            <div class="post-detail-2">
-                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Snorkelling</a></h6>
-                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
-                                                <ul class="icon-in-list-1">
-                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                                </ul>
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="post-item-2 hover_zoom mb-4">
+                                                    <div class="row">
+                                                        <div class="col-xl-6 col-md-4">
+                                                            <div class="overflow_hidden"><img src="img/height/1.jpg" alt="Image not found!"></div>
+                                                        </div>
+                                                        <div class="col-xl-6 col-md-8">
+                                                            <div class="post-detail-2">
+                                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Snorkelling</a></h6>
+                                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
+                                                                <ul class="icon-in-list-1">
+                                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <div class="col-xl-6">
+                                                <div class="post-item-2 hover_zoom mb-4">
+                                                    <div class="row">
+                                                        <div class="col-xl-6 col-md-4">
+                                                            <div class="overflow_hidden"><img src="img/height/2.jpg" alt="Image not found!"></div>
+                                                        </div>
+                                                        <div class="col-xl-6 col-md-8">
+                                                            <div class="post-detail-2">
+                                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Jet Ski</a></h6>
+                                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
+                                                                <ul class="icon-in-list-1">
+                                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="post-item-2 hover_zoom mb-4">
+                                                    <div class="row">
+                                                        <div class="col-xl-6 col-md-4">
+                                                            <div class="overflow_hidden"><img src="img/height/3.jpg" alt="Image not found!"></div>
+                                                        </div>
+                                                        <div class="col-xl-6 col-md-8">
+                                                            <div class="post-detail-2">
+                                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Water Rafting</a></h6>
+                                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
+                                                                <ul class="icon-in-list-1">
+                                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="post-item-2 hover_zoom mb-4">
+                                                    <div class="row">
+                                                        <div class="col-xl-6 col-md-4">
+                                                            <div class="overflow_hidden"><img src="img/height/4.jpg" alt="Image not found!"></div>
+                                                        </div>
+                                                        <div class="col-xl-6 col-md-8">
+                                                            <div class="post-detail-2">
+                                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Surfing</a></h6>
+                                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
+                                                                <ul class="icon-in-list-1">
+                                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                              <div class="col-md-12 mt-5"> <a href="#" class="btn btn-lg-primary m-auto d-table">View More Excursion</a> </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="post-item-2 hover_zoom mb-4">
-                                    <div class="row">
-                                        <div class="col-xl-6 col-md-4">
-                                            <div class="overflow_hidden"><img src="img/height/2.jpg" alt="Image not found!"></div>
-                                        </div>
-                                        <div class="col-xl-6 col-md-8">
-                                            <div class="post-detail-2">
-                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Jet Ski</a></h6>
-                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
-                                                <ul class="icon-in-list-1">
-                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="post-item-2 hover_zoom mb-4">
-                                    <div class="row">
-                                        <div class="col-xl-6 col-md-4">
-                                            <div class="overflow_hidden"><img src="img/height/3.jpg" alt="Image not found!"></div>
-                                        </div>
-                                        <div class="col-xl-6 col-md-8">
-                                            <div class="post-detail-2">
-                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Water Rafting</a></h6>
-                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
-                                                <ul class="icon-in-list-1">
-                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="post-item-2 hover_zoom mb-4">
-                                    <div class="row">
-                                        <div class="col-xl-6 col-md-4">
-                                            <div class="overflow_hidden"><img src="img/height/4.jpg" alt="Image not found!"></div>
-                                        </div>
-                                        <div class="col-xl-6 col-md-8">
-                                            <div class="post-detail-2">
-                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Surfing</a></h6>
-                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
-                                                <ul class="icon-in-list-1">
-                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
+                                </section>
+                
 
                 <!-- Awesome Place Section Start -->
-                <section class="full-row bg-gray">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-6">
-                                <div class="main-title-area text-center">
-                                    <h2 class="title left-right-line mb-4">Attraction</h2>
-                                </div>
-                                <span class="subtext text-secondary text-center mb-5 box-width">The Best Value Under the Sun</span> </div>
-                        </div>
-
-                        <div class="row owl-carousel" id="myslide">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
-                                 <div class="awesome-place-item overlay-secondery-opacity-40 hover_zoom mb-4">
-                                    <div class="overflow_hidden"><a href="view-attraction.php"><img src="img/height/1.jpg" alt="Awesome Place"></a></div>
-                                    <div class="upper-place-bottom-left text-white excursion-des">
-                                        <h4 class="fw-5"><a href="view-excursion.php" class="text-white">Mountain City</a></h4>
-                                        <span>Eros id Consequat, facilisis, eros ridiculus vehicula justo lacinia. Spaptent and aenean. Justo facilisi gravida nascetur quis rutrum nostra. Nisl quisqu all per. Ante platea aenean Nunc turpis tristique. Primis aliquet inceptos all seamper per. Posuere litora vulputate sem risus habit praesent ultric enim leo pulvinar enim arcu blandit sit. Natoq dis.</span>
-                                        <div class="h4 mt-3 mb-0 text-white "><a href="view-excursion.php"><small><i class="fas fa-paper-plane"></i> Read More</small></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
-                               <div class="awesome-place-item overlay-secondery-opacity-40 hover_zoom mb-4">
-                                    <div class="overflow_hidden"><img src="img/height/2.jpg" alt="Awesome Place"></div>
-                                    <div class="upper-place-bottom-left text-white excursion-des">
-                                        <h4 class="fw-5"><a href="view-excursion.php" class="text-white">Seneora Beach</a></h4>
-                                        <span>Eros id Consequat, facilisis, eros ridiculus vehicula justo lacinia. Spaptent and aenean. Justo facilisi gravida nascetur quis rutrum nostra. Nisl quisqu all per. Ante platea aenean Nunc turpis tristique. Primis aliquet inceptos all seamper per. Posuere litora vulputate sem risus habit praesent ultric enim leo pulvinar enim arcu blandit sit. Natoq dis.</span>
-                                       <div class="h4 mt-3 mb-0 text-white "><a href="view-excursion.php"><small><i class="fas fa-paper-plane"></i> Read More</small></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
-                                 <div class="awesome-place-item overlay-secondery-opacity-40 hover_zoom mb-4">
-                                    <div class="overflow_hidden"><img src="img/height/3.jpg" alt="Awesome Place"></div>
-                                    <div class="upper-place-bottom-left text-white excursion-des">
-                                        <h4 class="fw-5"><a href="view-excursion.php" class="text-white">Beach Market</a></h4>
-                                        <span>Eros id Consequat, facilisis, eros ridiculus vehicula justo lacinia. Spaptent and aenean. Justo facilisi gravida nascetur quis rutrum nostra. Nisl quisqu all per. Ante platea aenean Nunc turpis tristique. Primis aliquet inceptos all seamper per. Posuere litora vulputate sem risus habit praesent ultric enim leo pulvinar enim arcu blandit sit. Natoq dis.</span>
-                                      <div class="h4 mt-3 mb-0 text-white "><a href="view-excursion.php"><small><i class="fas fa-paper-plane"></i> Read More</small></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive">
-                                 <div class="awesome-place-item overlay-secondery-opacity-40 hover_zoom mb-4">
-                                    <div class="overflow_hidden"><img src="img/height/11.jpg" alt="Awesome Place"></div>
-                                    <div class="upper-place-bottom-left text-white excursion-des">
-                                        <h4 class="fw-5"><a href="view-excursion.php" class="text-white">Rock Mountain</a></h4>
-                                        <span>Eros id Consequat, facilisis, eros ridiculus vehicula justo lacinia. Spaptent and aenean. Justo facilisi gravida nascetur quis rutrum nostra. Nisl quisqu all per. Ante platea aenean Nunc turpis tristique. Primis aliquet inceptos all seamper per. Posuere litora vulputate sem risus habit praesent ultric enim leo pulvinar enim arcu blandit sit. Natoq dis.</span>
-                                        <div class="h4 mt-3 mb-0 text-white "><a href="view-excursion.php"><small><i class="fas fa-paper-plane"></i> Read More</small></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+              
                 <!-- Awesome Place Section End --> 
                 <!-- Testimonial 1 Section Start -->
                 <section class="full-row bg-gray p-0">
@@ -457,7 +404,7 @@ Mitors -->
                 $('#myslide').owlCarousel({
                     items: 3,
                     nav: true,
-                    dots: false,
+                    dots: true,
                     mouseDrag: true,
                     responsiveClass: true,
                     responsive: {
@@ -471,6 +418,15 @@ Mitors -->
                             items: 3
                         }
                     }
+                });
+
+                $('#carousel-example-generic').owlCarousel({
+                    items: 1,
+                    nav: false,
+                    dots: true,
+                    mouseDrag: true,
+                    responsiveClass: false,
+
                 });
 
             });
