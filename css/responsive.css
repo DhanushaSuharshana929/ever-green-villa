@@ -1,0 +1,63 @@
+@media (min-width: 360px) and (max-width: 740px) {
+    .parallax-mob {
+        /* The image used */
+        background-image: url("../img/bg/7.jpg");
+
+        /* Set a specific height */
+        height: 1300px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 740px) {
+    .parallax-tab {
+        /* The image used */
+        background-image: url("../img/bg/7.jpg");
+
+        /* Set a specific height */
+        height: 1300px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .parallax-tab3 {
+        /* The image used */
+        background-image: url("../img/bg/7.jpg");
+
+        /* Set a specific height */
+        height: 750px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 740px) {
+    .parallax-tab2 {
+        /* The image used */
+        background-image: url("../img/bg/7.jpg");
+
+        /* Set a specific height */
+        height: 600px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
