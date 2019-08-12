@@ -30,6 +30,7 @@ include './class/include.php';
         <link rel="stylesheet" href="css/fontawesome-all-5.2.0.min.css">
         <link rel="stylesheet" href="webfonts/flaticon/flaticon.css">
         <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+        <link href="contact-form/style.css" rel="stylesheet" type="text/css"/>
 
         <title>Evergreen Villa | Contact Us</title>
     </head>
@@ -76,7 +77,7 @@ include './class/include.php';
                                         <span>info@sinharajaecovilla.com</span> </div>
                                     <div class="text-block-4">
                                         <h5>Call Us</h5>
-                                        <span>+94-77-248-3697</span>  <span>+94-77-541-8997</span> </div>
+                                        <span>+94-71-669-3502</span> </div>
                                     <ul class="social-media-3">
                                         <li><a href="#"></a></li>
                                     </ul>
@@ -96,39 +97,60 @@ include './class/include.php';
                                         <h2 class="title mb-3">Get In Touch</h2>
                                         <span class="subtext text-secondary">Let’s Send Us Message Here</span>
                                     </div>
-                                    <form id="contact-form" class="form-style-1 pb-4" action="http://unicoderbd.com/theme/html/vilena/light/email.php" method="post">
+                                    <div id="contact-form" class="form-style-1 pb-4" action="" method="post">
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <div class="form-group">
-                                                    <input class="form-control" id="name" name="firstname" placeholder="Your Name" type="text">
+                                                    <input class="form-control" id="txtFullName" name="txtFullName" placeholder="Your Name" type="text">
+                                                    <span id="spanFullName"></span>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="form-group">
-                                                    <input class="form-control" id="email" name="email" placeholder="Your Email" type="text">
+                                                    <input class="form-control" id="txtEmail" name="txtEmail" placeholder="Your Email" type="text">
+                                                    <span id="spanEmail"></span>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="form-group">
-                                                    <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
+                                                    <input class="form-control" id="txtSubject" name="txtSubject" placeholder="Subject" type="text">
+                                                    <span id="spanSubject"></span>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="form-group">
-                                                    <textarea class="form-control" id="message" name="message" cols="30" rows="6" placeholder="Message"></textarea>
+                                                    <textarea class="form-control" id="txtMessage" name="txtMessage" cols="30" rows="6" placeholder="Message"></textarea>
+                                                    <span id="spanMessage"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 text-center Default-clr-hvr">
+                                                <div class="form-group">
+                                                    <input  type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Enter the code " style="color: black">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <span id="capspan" ></span>
+                                                </div>
+                                            </div>    
+                                            <div class="col-md-4   Default-clr-hvr"  >
+                                                <div class="form-group" style="width: 74%;">
+                                                    <?php include("./contact-form/captchacode-widget.php"); ?>
+                                                </div> 
+                                            </div>
+                                            <div class="col-sm-4 col-md-4">
+                                                <div class="div-check" >
+                                                    <img src="contact-form/img/checking.gif" id="checking" style="width:50%"/>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
-                                                <button type="submit" id="send" value="send message" class="btn btn-primary-bg mt-3">Send Message</button>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="error-handel">
-                                                    <div id="success">Your email sent Successfully, Thank you.</div>
-                                                    <div id="error"> Error occurred while sending email. Please try again later.</div>
-                                                </div>
+                                                <button type="submit" id="btnSubmit" value="send message" class="btn btn-primary-bg mt-3">Send Message</button>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div id="dismessage" align="center"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -171,6 +193,7 @@ include './class/include.php';
         <script src="js/common.js"></script> 
         <script src="js/jquery.cookie.js"></script> 
         <script src="js/custom.js"></script>
+        <script src="contact-form/scripts.js" type="text/javascript"></script>
 
         <!-- Map jQuery --> 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPZ-Erd-14Vf2AoPW2Pzlxssf6-2R3PPs"></script> 
