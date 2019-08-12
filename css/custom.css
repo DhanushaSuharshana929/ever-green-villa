@@ -36,8 +36,29 @@
     color: #fff;
 }
 .top-title{
-    padding-top: 20px;
+    padding-top: 0px;
 }
 .header-top-color{
     color: rgba(36, 32, 32, 0.7);
+}
+.bg-color{
+    background-color: #dae2e9;
+}
+.box{
+ padding: 10px 10px 10px 10px;
+}
+.h5-title{
+    font-size: 15px;
+    margin-top:10px;
+}
+.p-des{
+    font-size:13px;
+    padding-top: 12px;
+    text-align: justify;
+}
+.post-detail-padding{
+    padding-top: 2px;
+}
+.div-padding{
+    padding-top:5px;
 }

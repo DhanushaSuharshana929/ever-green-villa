@@ -1,6 +1,9 @@
 <!doctype html>
+<?php
+include './class/include.php';
+$ABOUT_US = new Page(1);
+?>
 <html lang="en">
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -10,7 +13,7 @@
         <meta name="description" content="Vilena template">
         <meta name="keywords" content="hotel, resort, hotel booking, tour, living hotel, motel, event, hotel template">
         <meta name="author" content="Unicoder">
-
+        <title>Evergreen Villa | Home</title>
         <!-- Favicons -->
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
@@ -31,15 +34,13 @@
         <link href="css/custom.css" rel="stylesheet" type="text/css"/>
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
 
-        <title>Sinharaja Eco Villa | Home</title>
+
     </head>
     <body>
 
-
-
         <!-- End Color Settings -->
         <div id="page_wrapper">
-            <div class="row">
+            <div class="">
                 <!-- Header Section Start -->
                 <?php include 'header.php'; ?>
                 <!-- Header Section End --> 
@@ -57,24 +58,20 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-7 col-md-12">
+
                                 <div class="main-title-area">
                                     <h2 class="title mb-3">Evergreen Villa</h2>
                                 </div>
                                 <span class="subtext text-secondary mb-4">Days Inn There you go</span>
-                                <p>Eros id Consequat, facilisis, eros ridiculus vehicula justo lacinia. Spaptent and aenean. Justo facilisi gravida nascetur quis rutrum nostra. Nisl quisqu all per. Ante platea aenean Nunc turpis tristique. Primis aliquet inceptos all seamper per. Posuere litora vulputate sem risus habit praesent ultric enim leo pulvinar enim arcu blandit sit. Natoq dis. Suspendisse nonummy pellentesque place. Malesuad aenean. Leo curabitur elementum ultr. Rhoncus fusce ac eu nunc cras euismod ad dignissim natoque. Penatib natoque arcu, sed sit.</p>
+                                <p><?php echo $ABOUT_US->description; ?></p>
                                 <div class="mt-4 flat-medium flat-white clearfix">
                                     <div class="free-service-item bg-info float-left mb-1 mr-1"> <span class="icon bg-primary float-left mr-2 text-center"><i class="flaticon-dish"></i></span>
-                                        <h6 class="inner-title text-dark fw-5 py-4">Free Breakfast</h6>
+                                        <h6 class="inner-title text-dark fw-5 py-4">Accomadation</h6>
                                     </div>
-                                    <div class="free-service-item bg-info float-left mb-1 mr-1"> <span class="icon bg-primary float-left mr-2 text-center"><i class="flaticon-wireless-connection"></i></span>
-                                        <h6 class="inner-title text-dark fw-5 py-4">Enjoy Free Wifi</h6>
+                                    <div class="free-service-item bg-info float-left mb-1 mr-1"> <span class="icon bg-primary float-left mr-2 text-center"><i class="flaticon-leaf"></i></span>
+                                        <h6 class="inner-title text-dark fw-5 py-4">Nature Trails</h6>
                                     </div>
-                                    <div class="free-service-item bg-info float-left mb-1 mr-1"> <span class="icon bg-primary float-left mr-2 text-center"><i class="flaticon-taxi"></i></span>
-                                        <h6 class="inner-title text-dark fw-5 py-4">Pickup & Drop</h6>
-                                    </div>
-                                    <div class="free-service-item bg-info float-left mb-1 mr-1"> <span class="icon bg-primary float-left mr-2 text-center"><i class="flaticon-tv"></i></span>
-                                        <h6 class="inner-title text-dark fw-5 py-4">Free Cable Tv</h6>
-                                    </div>
+                                   
                                 </div>
                             </div>
                             <div class="col-lg-5 col-md-12">
@@ -96,65 +93,35 @@
                                 <span class="subtext text-secondary text-center mb-5 box-width">Across the street from the ordinary</span> </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="room-thumb-grid-1 hover_zoom bg-white mb-4">
-                                    <div class="thumb-top position-relative">
-                                        <ul class="facility-icon upper-place-bottom-left">
-                                            <li><i class="flaticon-tv"></i></li>
-                                            <li><i class="flaticon-wifi"></i></li>
-                                        </ul>
-                                        <div class="room-size upper-place-bottom-right">12 X 15 Sqft</div>
-                                        <div class="overflow_hidden"><img src="img/squire/2.jpg" alt="Booking Room"></div>
-                                    </div>
-                                    <div class="room-info p-4">
-                                        <div class="down-line-left mb-3">
-                                            <h6 class="title"><a class="text-secondery" href="#">Classic Room</a></h6>
-                                            <span>Nascetur iaculis vivamus vulputate vis. Pharetra ut rutrum gravida tellus port suspendisse parturient, per class ligula diam amet.</span> </div>
-                                        <div class="h5 per-night text-secondery">$80<small>/Night</small></div>
-                                        <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="room-thumb-grid-1 hover_zoom bg-white mb-4">
-                                    <div class="thumb-top position-relative">
-                                        <ul class="facility-icon upper-place-bottom-left">
-                                            <li><i class="flaticon-tv"></i></li>
-                                            <li><i class="flaticon-wifi"></i></li>
-                                        </ul>
-                                        <div class="room-size upper-place-bottom-right">22 X 18 Sqft</div>
-                                        <div class="overflow_hidden"><img src="img/squire/3.jpg" alt="Booking Room"></div>
-                                    </div>
-                                    <div class="room-info p-4">
-                                        <div class="down-line-left mb-3">
-                                            <h6 class="title"><a class="text-secondery" href="#">Duplex Room</a></h6>
-                                            <span>Nascetur iaculis vivamus vulputate vis. Pharetra ut rutrum gravida tellus port suspendisse parturient, per class ligula diam amet.</span> </div>
-                                        <div class="h5 per-night text-secondery">$120<small>/Night</small></div>
-                                        <a href="#" class="btn btn-primary float-right">Book Now</a>
+                            <?php
+                            $ROOM = new Room(NULL);
+                            foreach ($ROOM->all() as $key => $rooms) {
+                                ?>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="room-thumb-grid-1 hover_zoom bg-white mb-4">
+                                        <div class="thumb-top position-relative">
+                                            <ul class="facility-icon upper-place-bottom-left">
+                                                <li><i class="flaticon-tv"></i></li>
+                                                <li><i class="flaticon-wifi"></i></li>
+                                            </ul>
+                                            <!--                                            <div class="room-size upper-place-bottom-right">12 X 15 Sqft</div>-->
+                                            <div class="overflow_hidden"><a href="view-accomadation.php?id=<?php echo $rooms["id"]; ?>"><img src="upload/room/<?php echo $rooms['image_name'] ?>" alt="Booking Room"></a></div>
+                                       
+                                        </div>
+                                        <div class="room-info p-4">
+                                            <div class="down-line-left mb-3">
+                                                <h6 class="title"><a class="text-secondery" href="view-accommodation.php?id=<?php echo $rooms["id"]; ?>"><?php echo $rooms['title']; ?></a></h6>
+                                                <span><?php echo substr($rooms['short_description'], 0, 115) ?>...</span> </div>
+                                            <div class="h5 per-night text-secondery">$80<small>/Night</small></div>
+                                            <a href="view-accomadation.php?id=<?php echo $rooms["id"]; ?>" class="btn btn-primary float-right">View More</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="room-thumb-grid-1 hover_zoom bg-white mb-4">
-                                    <div class="thumb-top position-relative">
-                                        <ul class="facility-icon upper-place-bottom-left">
-                                            <li><i class="flaticon-hot-tea"></i></li>
-                                            <li><i class="flaticon-tv"></i></li>
-                                            <li><i class="flaticon-wifi"></i></li>
-                                        </ul>
-                                        <div class="room-size upper-place-bottom-right">16 X 12 Sqft</div>
-                                        <div class="overflow_hidden"><img src="img/squire/4.jpg" alt="Booking Room"></div>
-                                    </div>
-                                    <div class="room-info p-4">
-                                        <div class="down-line-left mb-3">
-                                            <h6 class="title"><a class="text-secondery" href="#">Honeymoon Room</a></h6>
-                                            <span>Nascetur iaculis vivamus vulputate vis. Pharetra ut rutrum gravida tellus port suspendisse parturient, per class ligula diam amet.</span> </div>
-                                        <div class="h5 per-night text-secondery">$150<small>/Night</small></div>
-                                        <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 mt-5"> <a href="#" class="btn btn-lg-primary m-auto d-table">View All Rooms</a> </div>
+                                <?php
+                            }
+                            ?>
+
+                            <!--                            <div class="col-md-12 mt-5"> <a href="#" class="btn btn-lg-primary m-auto d-table">View All Rooms</a> </div>-->
                         </div>
                     </div>
                 </section>
@@ -165,9 +132,9 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="main-title-area text-center">
-                                    <h2 class="title left-right-line mb-3">Our Services</h2>
+                                    <h2 class="title left-right-line mb-3 text-white">Our Services</h2>
                                 </div>
-                                <span class="subtext text-secondary text-center mb-5 box-width">Across the street from the ordinary</span> </div>
+                                <span class="subtext text-secondary text-center mb-5 box-width text-white">Across the street from the ordinary</span> </div>
                         </div>
                         <div class="row">
                             <div class="col-xl-4 col-md-6">
@@ -217,97 +184,55 @@
                     </div>
                 </section>
                 <!-- Blank Area End --> 
-                
-                                <section class="full-row bg-gray">
-                                    <div class="container">
+
+                <section class="full-row bg-gray">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-title-area text-center">
+                                    <h2 class="title left-right-line mb-3">Excursion</h2>
+                                </div>
+                                <span class="subtext text-secondary text-center mb-5 box-width">Everything except excess</span> </div>
+                        </div>
+                        <div class="row">
+                            <?php
+                            $ATTRACTION = new Attraction(NULL);
+                            foreach ($ATTRACTION->all() as $key => $attraction) {
+                                if ($key == 4) {
+                                    break;
+                                }
+                                ?>
+
+                                <div class="col-xl-6">
+                                    <div class="post-item-2 hover_zoom mb-4">
                                         <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="main-title-area text-center">
-                                                    <h2 class="title left-right-line mb-3">Excursion</h2>
-                                                </div>
-                                                <span class="subtext text-secondary text-center mb-5 box-width">Everything except excess</span> </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xl-6">
-                                                <div class="post-item-2 hover_zoom mb-4">
-                                                    <div class="row">
-                                                        <div class="col-xl-6 col-md-4">
-                                                            <div class="overflow_hidden"><img src="img/height/1.jpg" alt="Image not found!"></div>
-                                                        </div>
-                                                        <div class="col-xl-6 col-md-8">
-                                                            <div class="post-detail-2">
-                                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Snorkelling</a></h6>
-                                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
-                                                                <ul class="icon-in-list-1">
-                                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            <div class="col-xl-6 col-md-4">
+                                                <div class="overflow_hidden"><a href="view-excursion.php?id=<?php echo $attraction["id"]; ?>"><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="Image not found!"></a></div>
+                                            </div>
+                                            <div class="col-xl-6 col-md-8">
+                                                <div class="post-detail-2">
+                                                    <h6 class="title mb-3"><a class="text-secondery" href="view-excursion.php?id=<?php echo $attraction["id"]; ?>"><?php echo $attraction['title'] ?></a></h6>
+                                                    <p style="text-align: justify;"><?php echo substr($attraction['short_description'], 0, 175) ?>...</p>
+
+                                                    <ul class="icon-in-list-1">
+                                                        <a href="view-excursion.php?id=<?php echo $attraction["id"]; ?>" class="btn btn-primary float-right">View More</a>
+                                                    </ul>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-6">
-                                                <div class="post-item-2 hover_zoom mb-4">
-                                                    <div class="row">
-                                                        <div class="col-xl-6 col-md-4">
-                                                            <div class="overflow_hidden"><img src="img/height/2.jpg" alt="Image not found!"></div>
-                                                        </div>
-                                                        <div class="col-xl-6 col-md-8">
-                                                            <div class="post-detail-2">
-                                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Jet Ski</a></h6>
-                                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
-                                                                <ul class="icon-in-list-1">
-                                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="post-item-2 hover_zoom mb-4">
-                                                    <div class="row">
-                                                        <div class="col-xl-6 col-md-4">
-                                                            <div class="overflow_hidden"><img src="img/height/3.jpg" alt="Image not found!"></div>
-                                                        </div>
-                                                        <div class="col-xl-6 col-md-8">
-                                                            <div class="post-detail-2">
-                                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Water Rafting</a></h6>
-                                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
-                                                                <ul class="icon-in-list-1">
-                                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="post-item-2 hover_zoom mb-4">
-                                                    <div class="row">
-                                                        <div class="col-xl-6 col-md-4">
-                                                            <div class="overflow_hidden"><img src="img/height/4.jpg" alt="Image not found!"></div>
-                                                        </div>
-                                                        <div class="col-xl-6 col-md-8">
-                                                            <div class="post-detail-2">
-                                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Surfing</a></h6>
-                                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
-                                                                <ul class="icon-in-list-1">
-                                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                              <div class="col-md-12 mt-5"> <a href="#" class="btn btn-lg-primary m-auto d-table">View More Excursion</a> </div>
                                         </div>
                                     </div>
-                                </section>
-                
+                                </div>
+                                <?php
+                            }
+                            ?>
+                            <div class="col-md-12 mt-5"> <a href="#" class="btn btn-lg-primary m-auto d-table">View More Excursions</a> </div>
+                        </div>
+                    </div>
+                </section>
+
 
                 <!-- Awesome Place Section Start -->
-              
+
                 <!-- Awesome Place Section End --> 
                 <!-- Testimonial 1 Section Start -->
                 <section class="full-row bg-gray p-0">
@@ -320,43 +245,21 @@
                                 <span class="subtext text-secondary text-center mb-5 box-width">The Best Value Under the Sun</span> 
                             </div>
                             <div class="col-md-12">
-                                <div class="testimonial-1 shadow bg-white" style="padding: 50px 100px 100px;">
-                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
-                                        <!-- Indica
-Mitors -->
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                        </ol>
-
-                                        <!-- Wrapper for slides -->
-                                        <div class="carousel-inner" role="listbox">
-                                            <div class="carousel-item active">
-                                                <div class="testimonial-item-1"><img src="img/squire/5.jpg" alt="Testimonial Authot">
-                                                    <div class="opinion">
-                                                        <p><i class="fas fa-quote-left"></i>Tortor nascetur ridiculus sapien justo dictum bibendum posuere. Nibh gravida interdum ullamcorper ultrices volutpat luctus neque hymenaeos ridiculus, habitant mont justo lobortis pharetra integer facilisi libero.</p>
-                                                        <h5 class="name">Mikayla Ervin</h5>
-                                                        <span class="designation">Transportation Engineer</span> </div>
-                                                </div>
+                                <div class="testimonial-1 shadow bg-white" style="padding: 75px 100px 50px;">
+                                    <div class="row owl-carousel" id="myslide">
+                                        <?php
+                                        $COMMENT = new Comments(NULL);
+                                        foreach ($COMMENT->activeComments() as $comments) {
+                                            ?>
+                                        <div class="testimonial-item-1"><img src="upload/comments/<?php echo $comments['image_name']?>"  alt="Testimonial Authot" style="width: 100px !important;">
+                                                <div class="opinion">
+                                                    <p><i class="fas fa-quote-left"></i><?php echo $comments['comment'] ?></p>
+                                                    <h5 class="name"><?php echo $comments['name'] ?></h5>
+                                                    <span class="designation"><?php echo $comments['title'] ?></span> </div>
                                             </div>
-                                            <div class="carousel-item">
-                                                <div class="testimonial-item-1"><img src="img/squire/5.jpg" alt="Testimonial Authot">
-                                                    <div class="opinion">
-                                                        <p><i class="fas fa-quote-left"></i>Tortor nascetur ridiculus sapien justo dictum bibendum posuere. Nibh gravida interdum ullamcorper ultrices volutpat luctus neque hymenaeos ridiculus, habitant mont justo lobortis pharetra integer facilisi libero.</p>
-                                                        <h5 class="name">Mikayla Ervin</h5>
-                                                        <span class="designation">Transportation Engineer</span> </div>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <div class="testimonial-item-1"><img src="img/squire/5.jpg" alt="Testimonial Authot">
-                                                    <div class="opinion">
-                                                        <p><i class="fas fa-quote-left"></i>Tortor nascetur ridiculus sapien justo dictum bibendum posuere. Nibh gravida interdum ullamcorper ultrices volutpat luctus neque hymenaeos ridiculus, habitant mont justo lobortis pharetra integer facilisi libero.</p>
-                                                        <h5 class="name">Mikayla Ervin</h5>
-                                                        <span class="designation">Transportation Engineer</span> </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                            <?php
+                                        }
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -402,32 +305,25 @@ Mitors -->
 //                $(".owl-carousel").owlCarousel();
 
                 $('#myslide').owlCarousel({
-                    items: 3,
-                    nav: true,
-                    dots: true,
-                    mouseDrag: true,
-                    responsiveClass: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        480: {
-                            items: 2
-                        },
-                        769: {
-                            items: 3
-                        }
-                    }
-                });
-
-                $('#carousel-example-generic').owlCarousel({
                     items: 1,
                     nav: false,
                     dots: true,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
                     mouseDrag: true,
-                    responsiveClass: false,
+                    responsiveClass: true,
 
                 });
+
+//                $('#carousel-example-generic').owlCarousel({
+//                    items: 1,
+//                    nav: false,
+//                    dots: true,
+//                    mouseDrag: true,
+//                    responsiveClass: false,
+//
+//                });
 
             });
         </script>

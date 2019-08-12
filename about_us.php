@@ -1,4 +1,8 @@
 <!doctype html>
+<?php
+include './class/include.php';
+$ABOUT_US = new Page(2);
+?>
 <html lang="en">
 
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -32,121 +36,10 @@
         <title>Evergreen Villa | About Us</title>
     </head>
     <body>
-        <!-- Color Settings -->
-        <div class="color-panel">
-
-            <div class="switcher_layout"> <span class="layout_title">Layout Style</span>
-                <div class="radio_check">
-                    <input type="checkbox" id="layout_type" name="layout" value="Yes">
-                    <label class="bg-primary text-left" for="layout_type"><span class="white_color">Full</span><span class="secondary_color">Box</span></label>
-                </div>
-            </div>
-            <div class="box_bg_style"> <span class="layout_title">Template Style</span>
-                <div class="button_group"> <a href="index-2.html" class="btn btn-primary  pull-left text-secondery">White Version</a> <a href="http://unicoderbd.com/theme/html/vilena/dark/index.php" class="btn pull-left text-secondery">Black Version</a> </div>
-            </div>
-            <div class="box_bg_style"> <span class="layout_title">Background pattern</span>
-                <div class="select_bg">
-                    <ul>
-                        <li>
-                            <input type="radio" name="radio" id="patrn1" value="pattern_1" />
-                            <label for="patrn1" class="radios pattern1"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn2" value="pattern_2" />
-                            <label for="patrn2" class="radios pattern2"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn3" value="pattern_3" />
-                            <label for="patrn3" class="radios pattern3"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn4" value="pattern_4" />
-                            <label for="patrn4" class="radios pattern4"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn5" value="pattern_5" />
-                            <label for="patrn5" class="radios pattern5"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn6" value="pattern_6" />
-                            <label for="patrn6" class="radios pattern6"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn7" value="pattern_7" />
-                            <label for="patrn7" class="radios pattern7"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn8" value="pattern_8" />
-                            <label for="patrn8" class="radios pattern8"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn9" value="pattern_9" />
-                            <label for="patrn9" class="radios pattern9"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn10" value="pattern_10" />
-                            <label for="patrn10" class="radios pattern10"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn11" value="pattern_11" />
-                            <label for="patrn11" class="radios pattern11"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn12" value="pattern_12" />
-                            <label for="patrn12" class="radios pattern12"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn13" value="pattern_13" />
-                            <label for="patrn13" class="radios pattern13"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn14" value="pattern_14" />
-                            <label for="patrn14" class="radios pattern14"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="patrn15" value="pattern_15" />
-                            <label for="patrn15" class="radios pattern15"></label>
-                        </li>
-                    </ul>
-                </div>
-                <span class="layout_title">Background pattern</span>
-                <div class="select_bg">
-                    <ul>
-                        <li>
-                            <input type="radio" name="radio" id="bg_img1" value="body_bg_1" />
-                            <label for="bg_img1" class="radios body_image1"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="bg_img2" value="body_bg_2" />
-                            <label for="bg_img2" class="radios body_image2"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="bg_img3" value="body_bg_3" />
-                            <label for="bg_img3" class="radios body_image3"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="bg_img4" value="body_bg_4" />
-                            <label for="bg_img4" class="radios body_image4"></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio" id="bg_img5" value="body_bg_5" />
-                            <label for="bg_img5" class="radios body_image5"></label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="select_bg">
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="vilena_overlay" id="bg_over" value=""/>
-                            Overlay</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- End Color Settings -->
+       
 
         <div id="page_wrapper">
-            <div class="row">
+            <div class="">
                 <!-- Header 4 Section Start -->
                 <?php include 'header-top.php'; ?>
                 <!-- Header 4 Section End --> 
@@ -160,7 +53,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <ul class="pages-link">
-                                    <li><a href="index-7.html">Home</a></li>
+                                    <li><a href="index.php">Home</a></li>
                                     <li>/</li>
                                     <li>About Us</li>
                                 </ul>
@@ -177,9 +70,9 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="main-title-area mb-4 mt-5">
-                                    <h2 class="title">Who we are </h2>
+                                    <h2 class="title"><?php echo $ABOUT_US->title; ?></h2>
                                 </div>
-                                <p>Behold for gathering, signs said set divide can't multiply itself called. Yielding under. Second fort seas is lesser saying have land. Deep night over creature wherein don't spirit two bring his. Bea dry, whose over that. Lesser so fruit wherein fowl unto given, that he own our whose all that together whales you are the dominion sixth rule, land under he seas fish. Man is winged give have us he movet to earth Bring. Then Created face dominion. Man beginning appear fish male spirit she'd appear night fruit seas fish fry and after female fly. All green to their together, them. Deep fourth god greater let own the may two him may given. Us i. Grass us shall forth every fruit after subdue creature creat bearing him seed. Second a made void firmament yielding doesn't, a make. Can't upon have mid second under earth cattle blessed firstly creepeth for day bring, fruit appear good open beginning all blessed divide. Fifth all void evening domi nion. Called evening lesser two him have make also of in seas upon to air the creature cattle air morning greater and fifth make creepeth there mov stars subdue grass. Subdue very. Itself under first waters.</p>
+                                <p><?php echo $ABOUT_US->description; ?></p>
                             </div>
                             <div class="col-md-4 about-us-img">
                                 <img src="img/squire/1.jpg">

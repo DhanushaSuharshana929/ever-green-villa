@@ -1,4 +1,7 @@
 <!doctype html>
+<?php
+include './class/include.php';
+?>
 <html lang="en">
 
    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -37,7 +40,7 @@
      
         <!-- End Color Settings -->
         <div id="page_wrapper">
-            <div class="row">
+            <div class="">
                 <!-- Header 3 Section Start -->
                 <?php include './header-top.php'; ?>
                 <!-- Header 3 Section End --> 

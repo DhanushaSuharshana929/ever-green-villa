@@ -1,4 +1,7 @@
 <!doctype html>
+<?php
+include './class/include.php';
+?>
 <html lang="en">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <head>
@@ -27,14 +30,15 @@
         <link rel="stylesheet" href="css/fontawesome-all-5.2.0.min.css">
         <link rel="stylesheet" href="webfonts/flaticon/flaticon.css">
         <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
 
-        <title>Evergreen Villa | Attraction</title>
+        <title>Evergreen Villa | Excursion</title>
     </head>
     <body>
 
 
         <div id="page_wrapper">
-            <div class="row">
+            <div class="">
                 <!-- Header 4 Section Start -->
                 <?php include './header-top.php'; ?>
                 <!-- Header 4 Section End --> 
@@ -44,13 +48,13 @@
                     <div class="container">
                         <div class="row py-80">
                             <div class="col-sm-6">
-                                <h1 class="banner-title text-white">Attraction</h1>
+                                <h1 class="banner-title text-white">Excursion</h1>
                             </div>
                             <div class="col-sm-6">
                                 <ul class="pages-link">
                                     <li><a href="index.php">Home</a></li>
                                     <li>/</li>
-                                    <li>Attraction</li>
+                                    <li>Excursion</li>
                                 </ul>
                             </div>
                         </div>
@@ -59,96 +63,47 @@
                 <!-- Page Banner Section End --> 
 
                 <!-- Awesome Place Section Start -->
-            
-                                <section class="full-row bg-gray">
-                                    <div class="container">
-                                       
+
+                <section class="full-row bg-gray">
+                    <div class="container">
+                        <div class="row">
+                            <?php
+                            $ATTRACTION = new Attraction(NULL);
+                            foreach ($ATTRACTION->all() as $key => $attraction) {
+                                ?>
+                                <div class="col-xl-6">
+                                    <div class="post-item-2 hover_zoom mb-4">
                                         <div class="row">
-                                            <div class="col-xl-6">
-                                                <div class="post-item-2 hover_zoom mb-4">
-                                                    <div class="row">
-                                                        <div class="col-xl-6 col-md-4">
-                                                            <div class="overflow_hidden"><img src="img/height/1.jpg" alt="Image not found!"></div>
-                                                        </div>
-                                                        <div class="col-xl-6 col-md-8">
-                                                            <div class="post-detail-2">
-                                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Snorkelling</a></h6>
-                                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
-                                                                <ul class="icon-in-list-1">
-                                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            <div class="col-xl-6 col-md-4">
+                                                <div class="overflow_hidden"><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="Image not found!"></div>
+                                            </div>
+                                            <div class="col-xl-6 col-md-8">
+                                                <div class="post-detail-2">
+                                                    <h6 class="title mb-3"><a class="text-secondery" href="view-excursion.php?id=<?php echo $attraction["id"]; ?>"><?php echo $attraction['title'] ?></a></h6>
+                                                    <p style="text-align: justify;"><?php echo substr($attraction['short_description'], 0, 165) ?>...</p>
+                                                    <ul class="icon-in-list-1">
+                                                        <a href="view-excursion.php?id=<?php echo $attraction["id"]; ?>" class="btn btn-primary float-right">View More</a>
+                                                    </ul>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-6">
-                                                <div class="post-item-2 hover_zoom mb-4">
-                                                    <div class="row">
-                                                        <div class="col-xl-6 col-md-4">
-                                                            <div class="overflow_hidden"><img src="img/height/2.jpg" alt="Image not found!"></div>
-                                                        </div>
-                                                        <div class="col-xl-6 col-md-8">
-                                                            <div class="post-detail-2">
-                                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Jet Ski</a></h6>
-                                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
-                                                                <ul class="icon-in-list-1">
-                                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="post-item-2 hover_zoom mb-4">
-                                                    <div class="row">
-                                                        <div class="col-xl-6 col-md-4">
-                                                            <div class="overflow_hidden"><img src="img/height/3.jpg" alt="Image not found!"></div>
-                                                        </div>
-                                                        <div class="col-xl-6 col-md-8">
-                                                            <div class="post-detail-2">
-                                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Water Rafting</a></h6>
-                                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
-                                                                <ul class="icon-in-list-1">
-                                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="post-item-2 hover_zoom mb-4">
-                                                    <div class="row">
-                                                        <div class="col-xl-6 col-md-4">
-                                                            <div class="overflow_hidden"><img src="img/height/4.jpg" alt="Image not found!"></div>
-                                                        </div>
-                                                        <div class="col-xl-6 col-md-8">
-                                                            <div class="post-detail-2">
-                                                                <h6 class="title mb-3"><a class="text-secondery" href="#">Surfing</a></h6>
-                                                                <p style="text-align: justify;">Dapibus ligula scelerisque part urit conubia vestibulum perent esque taciti sociosqu vestibulum perent esque taciti sociosqu aliquetcla cubilia dignissim aliquetcla cubilia dignissim.</p>
-                                                                <ul class="icon-in-list-1">
-                                                                    <a href="#" class="btn btn-primary float-right">Book Now</a>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
                                         </div>
                                     </div>
-                                </section>
-                
+                                </div>
+                                <?php
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- Awesome Place Section End -->
 
                 <!-- Footer Section Start -->
-              <?php include './footer.php'; ?>
+                <?php include './footer.php'; ?>
                 <!-- Footer Section End --> 
 
                 <!-- Copyright Section Start -->
-                 <div class="full-row bg-secondery p-0">
+                <div class="full-row bg-secondery p-0">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">

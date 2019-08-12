@@ -1,4 +1,7 @@
 <!doctype html>
+<?php
+include './class/include.php';
+?>
 <html lang="en">
 
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -37,7 +40,7 @@
         <!-- End Color Settings -->
 
         <div id="page_wrapper">
-            <div class="row">
+            <div class="">
                 <!-- Header 4 Section Start -->
                 <?php include './header-top.php'; ?>
                 <!-- Header 4 Section End --> 
@@ -64,171 +67,31 @@
                 <section class="full-row bg-white">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="room-thumb-grid-1 hover_zoom bg-white mb-4 shadow">
-                                    <div class="thumb-top  overflow_hidden">
-                                        <ul class="facility-icon upper-place-bottom-left">
-                                            <li><i class="flaticon-tv"></i></li>
-                                            <li><i class="flaticon-wifi"></i></li>
-                                        </ul>
-                                        <div class="room-size upper-place-bottom-right">12 X 15 Sqft</div>
-                                        <img src="img/squire/2.jpg" alt="Booking Room"></div>
-                                    <div class="room-info p-4">
-                                        <div class="down-line-left mb-3">
-                                            <h5 class="title"><a class="text-secondery" href="view-accomadation.php">Classic Room</a></h5>
-                                            <span>Duble bed 2 window, mountain view</span> </div>
-                                        <div class="h5 per-night text-secondery">$80<small>/Night</small></div>
-                                        <a href="view-accomadation.php" class="btn btn-primary float-right">Book Now</a>
+                            <?php
+                            $ROOM = new Room(NULL);
+                            foreach ($ROOM->all() as $key => $rooms) {
+                                ?>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="room-thumb-grid-1 hover_zoom bg-white mb-4 shadow">
+                                        <div class="thumb-top  overflow_hidden">
+                                            <ul class="facility-icon upper-place-bottom-left">
+                                                <li><i class="flaticon-tv"></i></li>
+                                                <li><i class="flaticon-wifi"></i></li>
+                                            </ul>
+                                            <!--                                            <div class="room-size upper-place-bottom-right">12 X 15 Sqft</div>-->
+                                            <a href="view-accomadation.php?id=<?php echo $rooms["id"]; ?>"><img src="upload/room/<?php echo $rooms['image_name'] ?>" alt="Booking Room"></a></div>
+                                        <div class="room-info p-4">
+                                            <div class="down-line-left mb-3">
+                                                <h5 class="title"><a class="text-secondery" href="view-accommodation.php?id=<?php echo $rooms["id"]; ?>"><?php echo $rooms['title']; ?></a></h5>
+                                                <span><?php echo substr($rooms['short_description'], 0, 115) ?>...</span> </div>
+                                            <div class="h5 per-night text-secondery">$80<small>/Night</small></div>
+                                            <a href="view-accomadation.php?id=<?php echo $rooms["id"]; ?>" class="btn btn-primary float-right">View More</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="room-thumb-grid-1 hover_zoom bg-white mb-4 shadow">
-                                    <div class="thumb-top overflow_hidden">
-                                        <ul class="facility-icon upper-place-bottom-left">
-                                            <li><i class="flaticon-tv"></i></li>
-                                            <li><i class="flaticon-wifi"></i></li>
-                                        </ul>
-                                        <div class="room-size upper-place-bottom-right">22 X 18 Sqft</div>
-                                        <img src="img/squire/3.jpg" alt="Booking Room"></div>
-                                    <div class="room-info p-4">
-                                        <div class="down-line-left mb-3">
-                                            <h5 class="title"><a class="text-secondery" href="view-accomadation.php">Duplex Room</a></h5>
-                                            <span>Duble bed 2 window, mountain view</span> </div>
-                                        <div class="h5 per-night text-secondery">$120<small>/Night</small></div>
-                                        <a href="view-accomadation.php" class="btn btn-primary float-right">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="room-thumb-grid-1 hover_zoom bg-white mb-4 shadow">
-                                    <div class="thumb-top overflow_hidden">
-                                        <ul class="facility-icon upper-place-bottom-left">
-                                            <li><i class="flaticon-hot-tea"></i></li>
-                                            <li><i class="flaticon-tv"></i></li>
-                                            <li><i class="flaticon-wifi"></i></li>
-                                        </ul>
-                                        <div class="room-size upper-place-bottom-right">16 X 12 Sqft</div>
-                                        <img src="img/squire/4.jpg" alt="Booking Room"></div>
-                                    <div class="room-info p-4">
-                                        <div class="down-line-left mb-3">
-                                            <h5 class="title"><a class="text-secondery" href="view-accomadation.php">Honeymoon Room</a></h5>
-                                            <span>Duble bed 1 sofa and mountain view</span> </div>
-                                        <div class="h5 per-night text-secondery">$150<small>/Night</small></div>
-                                        <a href="view-accomadation.php" class="btn btn-primary float-right">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="room-thumb-grid-1 hover_zoom bg-white mb-4 shadow">
-                                    <div class="thumb-top overflow_hidden">
-                                        <ul class="facility-icon upper-place-bottom-left">
-                                            <li><i class="flaticon-tv"></i></li>
-                                            <li><i class="flaticon-wifi"></i></li>
-                                        </ul>
-                                        <div class="room-size upper-place-bottom-right">12 X 15 Sqft</div>
-                                        <img src="img/squire/2.jpg" alt="Booking Room"></div>
-                                    <div class="room-info p-4">
-                                        <div class="down-line-left mb-3">
-                                            <h5 class="title"><a class="text-secondery" href="view-accomadation.php">Economy Room</a></h5>
-                                            <span>Double bed 2 window, mountain view</span> </div>
-                                        <div class="h5 per-night text-secondery">$80<small>/Night</small></div>
-                                        <a href="view-accomadation.php" class="btn btn-primary float-right">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="room-thumb-grid-1 hover_zoom bg-white mb-4 shadow">
-                                    <div class="thumb-top overflow_hidden">
-                                        <ul class="facility-icon upper-place-bottom-left">
-                                            <li><i class="flaticon-tv"></i></li>
-                                            <li><i class="flaticon-wifi"></i></li>
-                                        </ul>
-                                        <div class="room-size upper-place-bottom-right">22 X 18 Sqft</div>
-                                        <img src="img/squire/3.jpg" alt="Booking Room"></div>
-                                    <div class="room-info p-4">
-                                        <div class="down-line-left mb-3">
-                                            <h5 class="title"><a class="text-secondery" href="view-accomadation.php">Duplex Room</a></h5>
-                                            <span>Duble bed 2 window, mountain view</span> </div>
-                                        <div class="h5 per-night text-secondery">$120<small>/Night</small></div>
-                                        <a href="view-accomadation.php" class="btn btn-primary float-right">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="room-thumb-grid-1 hover_zoom bg-white mb-4 shadow">
-                                    <div class="thumb-top overflow_hidden">
-                                        <ul class="facility-icon upper-place-bottom-left">
-                                            <li><i class="flaticon-hot-tea"></i></li>
-                                            <li><i class="flaticon-tv"></i></li>
-                                            <li><i class="flaticon-wifi"></i></li>
-                                        </ul>
-                                        <div class="room-size upper-place-bottom-right">16 X 12 Sqft</div>
-                                        <img src="img/squire/4.jpg" alt="Booking Room"></div>
-                                    <div class="room-info p-4">
-                                        <div class="down-line-left mb-3">
-                                            <h5 class="title"><a class="text-secondery" href="view-accomadation.php">Special Room</a></h5>
-                                            <span>Duble bed 1 sofa and mountain view</span> </div>
-                                        <div class="h5 per-night text-secondery">$150<small>/Night</small></div>
-                                        <a href="view-accomadation.php" class="btn btn-primary float-right">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="room-thumb-grid-1 hover_zoom bg-white mb-4 shadow">
-                                    <div class="thumb-top overflow_hidden">
-                                        <ul class="facility-icon upper-place-bottom-left">
-                                            <li><i class="flaticon-tv"></i></li>
-                                            <li><i class="flaticon-wifi"></i></li>
-                                        </ul>
-                                        <div class="room-size upper-place-bottom-right">12 X 15 Sqft</div>
-                                        <img src="img/squire/2.jpg" alt="Booking Room"></div>
-                                    <div class="room-info p-4">
-                                        <div class="down-line-left mb-3">
-                                            <h5 class="title"><a class="text-secondery" href="view-accomadation.php">Luxury Room</a></h5>
-                                            <span>Duble bed 2 window, mountain view</span> </div>
-                                        <div class="h5 per-night text-secondery">$80<small>/Night</small></div>
-                                        <a href="view-accomadation.php" class="btn btn-primary float-right">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="room-thumb-grid-1 hover_zoom bg-white mb-4 shadow">
-                                    <div class="thumb-top overflow_hidden">
-                                        <ul class="facility-icon upper-place-bottom-left">
-                                            <li><i class="flaticon-tv"></i></li>
-                                            <li><i class="flaticon-wifi"></i></li>
-                                        </ul>
-                                        <div class="room-size upper-place-bottom-right">22 X 18 Sqft</div>
-                                        <img src="img/squire/3.jpg" alt="Booking Room"></div>
-                                    <div class="room-info p-4">
-                                        <div class="down-line-left mb-3">
-                                            <h5 class="title"><a class="text-secondery" href="view-accomadation.php">Single Room</a></h5>
-                                            <span>Duble bed 2 window, mountain view</span> </div>
-                                        <div class="h5 per-night text-secondery">$120<small>/Night</small></div>
-                                        <a href="view-accomadation.php" class="btn btn-primary float-right">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="room-thumb-grid-1 hover_zoom bg-white mb-4 shadow">
-                                    <div class="thumb-top overflow_hidden">
-                                        <ul class="facility-icon upper-place-bottom-left">
-                                            <li><i class="flaticon-hot-tea"></i></li>
-                                            <li><i class="flaticon-tv"></i></li>
-                                            <li><i class="flaticon-wifi"></i></li>
-                                        </ul>
-                                        <div class="room-size upper-place-bottom-right">16 X 12 Sqft</div>
-                                        <img src="img/squire/4.jpg" alt="Booking Room"></div>
-                                    <div class="room-info p-4">
-                                        <div class="down-line-left mb-3">
-                                            <h5 class="title"><a class="text-secondery" href="view-accomadation.php">Family Room</a></h5>
-                                            <span>Duble bed 1 sofa and mountain view</span> </div>
-                                        <div class="h5 per-night text-secondery">$150<small>/Night</small></div>
-                                        <a href="view-accomadation.php" class="btn btn-primary float-right">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
+                                <?php
+                            }
+                            ?>
                         </div>
 
                     </div>
