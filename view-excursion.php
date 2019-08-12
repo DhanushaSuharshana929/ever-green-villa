@@ -1,6 +1,8 @@
 <!doctype html>
 <?php
 include './class/include.php';
+$id = $_GET["id"];
+$attraction = new Attraction($id);
 ?>
 <html lang="en">
 
@@ -31,16 +33,16 @@ include './class/include.php';
         <link rel="stylesheet" href="css/fontawesome-all-5.2.0.min.css">
         <link rel="stylesheet" href="webfonts/flaticon/flaticon.css">
         <link href="css/custom.css" rel="stylesheet" type="text/css"/>
-        
+
         <title>Evergreen Villa | Excursion</title>
     </head>
     <body>
-       
+
 
         <div id="page_wrapper">
             <div class="">
                 <!-- Header 4 Section Start -->
-            <?php include './header-top.php'; ?>
+                <?php include './header-top.php'; ?>
                 <!-- Header 4 Section End --> 
 
                 <!-- Page Banner Section Start -->
@@ -52,7 +54,7 @@ include './class/include.php';
                             </div>
                             <div class="col-sm-6">
                                 <ul class="pages-link">
-                                    <li><a href="index-7.html">Home</a></li>
+                                    <li><a href="index.php">Home</a></li>
                                     <li>/</li>
                                     <li>Excursion</li>
                                 </ul>
@@ -67,46 +69,78 @@ include './class/include.php';
                         <div class="row">
                             <div class="col-lg-8">
                                 <div class="place-item-details">
-                                    <div class="blog-img"> <img src="img/width/35.jpg" alt="Image not found!"> </div>
                                     <div class="place-detail-info">
-                                        <h3>Hemalia Sea Beach Infront of the Rock Mountain</h3>
+                                        <h3><?php echo $attraction->title ?></h3>
                                         <span>Blue water beach and white sand test</span>
                                     </div>
-                                    <div class="line"></div>
-                                    <p>Ligula at posuere leo dictumst ad sollicitudin. Magna congue, leo, eros curabitur interdum maec facilisi per maecenas mattis enim in nostra libero pede mauris neque varius ad ad inceptos. Erat empor amet nisl scelerisque maecenas fringilla ad ridiculus gravida. Arcu dignissim commodorn ornare eget. Ligula congue dolor placerat, nibh dis dui, penatibus ac praesent tellus mon, leris, vulputate eros eu maecenas lobortis per orci sit Penatibus mauris senectus vulputate tincid crasl feugiat class tempus eget ridiculus vehicula dolor praesent. Hymenaeos. Venenatis non litor feug suspendisse rutrum hymenaeos taciti praesent ut velit. Cum pharetra nisl nisi.</p>
-                                
-                                    
                                     <div class="mt-5">
-                                        <h4 class="mb-4">Place More Photo</h4>
-                                        <div class="photo-gallery"> <a href="img/width/1.jpg" class="img_view" data-fancybox="gallery">
-                                                <div class="overlay-secondery-opacity-40"> <span class="text-primary xy-center"><i class="fa fa-plus"></i></span> <img src="img/width/1.jpg" alt="Image not found!"> </div>
-                                            </a> <a href="img/width/2.jpg" class="img_view" data-fancybox="gallery">
-                                                <div class="overlay-secondery-opacity-40"> <span class="text-primary xy-center"><i class="fa fa-plus"></i></span> <img src="img/width/2.jpg" alt="Image not found!"> </div>
-                                            </a> <a href="img/width/3.jpg" class="img_view" data-fancybox="gallery">
-                                                <div class="overlay-secondery-opacity-40"> <span class="text-primary xy-center"><i class="fa fa-plus"></i></span> <img src="img/width/3.jpg" alt="Image not found!"> </div>
-                                            </a> <a href="img/width/4.jpg" class="img_view" data-fancybox="gallery">
-                                                <div class="overlay-secondery-opacity-40"> <span class="text-primary xy-center"><i class="fa fa-plus"></i></span> <img src="img/width/4.jpg" alt="Image not found!"> </div>
-                                            </a> <a href="img/width/5.jpg" class="img_view" data-fancybox="gallery">
-                                                <div class="overlay-secondery-opacity-40"> <span class="text-primary xy-center"><i class="fa fa-plus"></i></span> <img src="img/width/5.jpg" alt="Image not found!"> </div>
-                                            </a> <a href="img/width/6.jpg" class="img_view" data-fancybox="gallery">
-                                                <div class="overlay-secondery-opacity-40"> <span class="text-primary xy-center"><i class="fa fa-plus"></i></span> <img src="img/width/6.jpg" alt="Image not found!"> </div>
-                                            </a> 
+
+                                        <div class="photo-gallery"> 
+                                            <?php
+                                            $ATTRACTION_PHOTOS = AttractionPhoto::getAttractionPhotosById($id);
+                                            foreach ($ATTRACTION_PHOTOS as $key => $attraction_photo) {
+                                                if ($key < 6) {
+                                                    ?>
+                                                    <a href="upload/attraction/gallery/<?php echo $attraction_photo['image_name'] ?>" class="img_view" data-fancybox="gallery">
+                                                        <div class="overlay-secondery-opacity-40"> <span class="text-primary xy-center"><i class="fa fa-plus"></i></span> <img src="upload/attraction/gallery/thumb/<?php echo $attraction_photo['image_name'] ?>" alt="Image not found!"> </div>
+                                                    </a> 
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
                                         </div>
                                     </div>
+
+                                    <div class="line"></div>
+                                    <p><?php echo $attraction->description ?></p>
+
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <div class="sidebar">
-                                    <div class="widget hotel-booking-number"> <i class="flaticon-phone-contact"></i>
-                                        <h4 class="mt-30">Book Hotel By Phone</h4>
-                                        <span>+045 423 445 99</span> <b>Or</b> <a href="#" class="btn btn-primary-bg">Booking Now</a> </div>
+                                <h3 class="top-title">Other Excursion</h3>
+                                <div class="row">
+
+
+                                    <div class="widget widget_posts">
+
+                                        <ul>
+                                              <?php
+                                                $ATTRACTION = new Attraction(NULL);
+                                                foreach ($ATTRACTION->all() as $attraction) {
+                                                    ?>
+                                                <li>
+                                                    <div class="post-item mb-4 bg-color box">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 col-md-7">
+                                                                <div class=""> <a href="view-excurtion.php?id=<?php echo $attraction['id'] ?>"><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="Image not found!" ></a> </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-7 div-padding" >
+                                                                <div class="post-detail post-detail-padding">
+                                                                    <h5 class="title h5-title"><a class="text-secondery" href="view-excurtion.php?id=<?php echo $attraction['id'] ?>"><?php echo substr($attraction['title'], 0, 13)?>...</a></h5>
+                                                                    <p class="p-des"><?php echo substr($attraction['short_description'], 0, 45) ?>...</p>
+                                                                    <button>
+                                                                        <a href="view-excurtion.php?id=<?php echo $attraction['id'] ?>">View More</a>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--wd-post end-->
+                                                </li>
+                                                <?php
+                                            }
+                                            ?>
+
+                                        </ul>
+                                    </div><!--widget_posts end-->
+
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </section>
                 <!-- Footer Section Start -->
-             <?php include './footer.php'; ?>
+                <?php include './footer.php'; ?>
                 <!-- Footer Section End --> 
 
                 <!-- Copyright Section Start -->
