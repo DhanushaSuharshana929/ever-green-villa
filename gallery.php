@@ -1,4 +1,8 @@
 <!doctype html>
+<?php
+include './class/include.php';
+$photo_album = new PhotoAlbum(1);
+?>
 <html lang="en">
 
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -32,11 +36,11 @@
         <title>Evergreen Villa | Gallery</title>
     </head>
     <body>
-     
+
         <div id="page_wrapper">
-            <div class="row">
+            <div class="">
                 <!-- Header 4 Section Start -->
-               <?php include './header-top.php'; ?>
+                <?php include './header-top.php'; ?>
                 <!-- Header 4 Section End --> 
 
                 <!-- Page Banner Section Start -->
@@ -66,153 +70,28 @@
                             <div class="gallery-section">
                                 <div class="auto-container"> 
                                     <!--Filter-->
-                                    
+
                                     <!--Filter List-->
                                     <div class="row filter-list clearfix">
-                                        <div class="column mix rooms guides palace events col-md-4 col-sm-6"> 
-                                            <!--Default Portfolio Item-->
-                                            <div class="box-gallery">
-                                                <div class="inner-box"> 
-                                                    <!--Image Box--> 
-                                                    <a class="img_view" href="img/width/1.jpg" data-fancybox="gallery">
-                                                        <div class="overlay-1">
-                                                            <figure><img src="img/width/1.jpg" alt=""></figure>
-                                                            <span class="text-primary xy-center"><i class="fa fa-arrows-alt"></i></span> </div>
-                                                    </a> </div>
+                                        <?php
+                                        $ALBUM_PHOTO = new AlbumPhoto(NULL);
+                                        foreach ($ALBUM_PHOTO->getAlbumPhotosById(1) as $album_photo) {
+                                            ?>
+                                            <div class="column mix rooms guides palace events col-md-4 col-sm-6"> 
+                                                <!--Default Portfolio Item-->
+                                                <div class="box-gallery">
+                                                    <div class="inner-box"> 
+                                                        <!--Image Box--> 
+                                                        <a class="img_view" href="upload/photo-album/gallery/<?php echo $album_photo['image_name'] ?>" data-fancybox="gallery">
+                                                            <div class="overlay-1">
+                                                                <figure><img src="upload/photo-album/gallery/thumb/<?php echo $album_photo['image_name'] ?>" alt=""></figure>
+                                                                <span class="text-primary xy-center"><i class="fa fa-arrows-alt"></i></span> </div>
+                                                        </a> </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="column mix restaurant col-md-4 col-sm-6"> 
-                                            <!--Default Portfolio Item-->
-                                            <div class="box-gallery">
-                                                <div class="inner-box"> 
-                                                    <!--Image Box--> 
-                                                    <a class="img_view" href="img/width/2.jpg" data-fancybox="gallery">
-                                                        <div class="overlay-1">
-                                                            <figure><img src="img/width/2.jpg" alt=""></figure>
-                                                            <span class="text-primary xy-center"><i class="fa fa-arrows-alt"></i></span> </div>
-                                                    </a> </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mix restaurant palace rooms col-md-4 col-sm-6"> 
-                                            <!--Default Portfolio Item-->
-                                            <div class="box-gallery">
-                                                <div class="inner-box"> 
-                                                    <!--Image Box--> 
-                                                    <a class="img_view" href="img/width/3.jpg" data-fancybox="gallery">
-                                                        <div class="overlay-1">
-                                                            <figure><img src="img/width/3.jpg" alt=""></figure>
-                                                            <span class="text-primary xy-center"><i class="fa fa-arrows-alt"></i></span> </div>
-                                                    </a> </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mix rooms restaurant  events col-md-4 col-sm-6"> 
-                                            <!--Default Portfolio Item-->
-                                            <div class="box-gallery">
-                                                <div class="inner-box"> 
-                                                    <!--Image Box--> 
-                                                    <a class="img_view" href="img/width/4.jpg" data-fancybox="gallery">
-                                                        <div class="overlay-1">
-                                                            <figure><img src="img/width/4.jpg" alt=""></figure>
-                                                            <span class="text-primary xy-center"><i class="fa fa-arrows-alt"></i></span> </div>
-                                                    </a> </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mix palace events col-md-4 col-sm-6"> 
-                                            <!--Default Portfolio Item-->
-                                            <div class="box-gallery">
-                                                <div class="inner-box"> 
-                                                    <!--Image Box--> 
-                                                    <a class="img_view" href="img/width/5.jpg" data-fancybox="gallery">
-                                                        <div class="overlay-1">
-                                                            <figure><img src="img/width/5.jpg" alt=""></figure>
-                                                            <span class="text-primary xy-center"><i class="fa fa-arrows-alt"></i></span> </div>
-                                                    </a> </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mix guides rooms events col-md-4 col-sm-6"> 
-                                            <!--Default Portfolio Item-->
-                                            <div class="box-gallery">
-                                                <div class="inner-box"> 
-                                                    <!--Image Box--> 
-                                                    <a class="img_view" href="img/width/6.jpg" data-fancybox="gallery">
-                                                        <div class="overlay-1">
-                                                            <figure><img src="img/width/6.jpg" alt=""></figure>
-                                                            <span class="text-primary xy-center"><i class="fa fa-arrows-alt"></i></span> </div>
-                                                    </a> </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mix rooms guides palace events col-md-4 col-sm-6"> 
-                                            <!--Default Portfolio Item-->
-                                            <div class="box-gallery">
-                                                <div class="inner-box"> 
-                                                    <!--Image Box--> 
-                                                    <a class="img_view" href="img/width/7.jpg" data-fancybox="gallery">
-                                                        <div class="overlay-1">
-                                                            <figure><img src="img/width/7.jpg" alt=""></figure>
-                                                            <span class="text-primary xy-center"><i class="fa fa-arrows-alt"></i></span> </div>
-                                                    </a> </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mix restaurant col-md-4 col-sm-6"> 
-                                            <!--Default Portfolio Item-->
-                                            <div class="box-gallery">
-                                                <div class="inner-box"> 
-                                                    <!--Image Box--> 
-                                                    <a class="img_view" href="img/width/8.jpg" data-fancybox="gallery">
-                                                        <div class="overlay-1">
-                                                            <figure><img src="img/width/8.jpg" alt=""></figure>
-                                                            <span class="text-primary xy-center"><i class="fa fa-arrows-alt"></i></span> </div>
-                                                    </a> </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mix restaurant palace rooms col-md-4 col-sm-6"> 
-                                            <!--Default Portfolio Item-->
-                                            <div class="box-gallery">
-                                                <div class="inner-box"> 
-                                                    <!--Image Box--> 
-                                                    <a class="img_view" href="img/width/9.jpg" data-fancybox="gallery">
-                                                        <div class="overlay-1">
-                                                            <figure><img src="img/width/9.jpg" alt=""></figure>
-                                                            <span class="text-primary xy-center"><i class="fa fa-arrows-alt"></i></span> </div>
-                                                    </a> </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mix rooms restaurant events col-md-4 col-sm-6"> 
-                                            <!--Default Portfolio Item-->
-                                            <div class="box-gallery">
-                                                <div class="inner-box"> 
-                                                    <!--Image Box--> 
-                                                    <a class="img_view" href="img/width/10.jpg" data-fancybox="gallery">
-                                                        <div class="overlay-1">
-                                                            <figure><img src="img/width/10.jpg" alt=""></figure>
-                                                            <span class="text-primary xy-center"><i class="fa fa-arrows-alt"></i></span> </div>
-                                                    </a> </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mix palace events col-md-4 col-sm-6"> 
-                                            <!--Default Portfolio Item-->
-                                            <div class="box-gallery">
-                                                <div class="inner-box"> 
-                                                    <!--Image Box--> 
-                                                    <a class="img_view" href="img/width/11.jpg" data-fancybox="gallery">
-                                                        <div class="overlay-1">
-                                                            <figure><img src="img/width/11.jpg" alt=""></figure>
-                                                            <span class="text-primary xy-center"><i class="fa fa-arrows-alt"></i></span> </div>
-                                                    </a> </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mix guides rooms events col-md-4 col-sm-6"> 
-                                            <!--Default Portfolio Item-->
-                                            <div class="box-gallery">
-                                                <div class="inner-box"> 
-                                                    <!--Image Box--> 
-                                                    <a class="img_view" href="img/width/12.jpg" data-fancybox="gallery">
-                                                        <div class="overlay-1">
-                                                            <figure><img src="img/width/12.jpg" alt=""></figure>
-                                                            <span class="text-primary xy-center"><i class="fa fa-arrows-alt"></i></span> </div>
-                                                    </a> </div>
-                                            </div>
-                                        </div>
+                                            <?php
+                                        }
+                                        ?> 
                                     </div>
                                 </div>
                             </div>
@@ -222,7 +101,7 @@
                 <!-- Photo Galary Section End -->
 
                 <!-- Footer Section Start -->
-               <?php include './footer.php'; ?>
+                <?php include './footer.php'; ?>
                 <!-- Footer Section End --> 
 
                 <!-- Copyright Section Start -->

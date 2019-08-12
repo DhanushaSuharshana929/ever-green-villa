@@ -1,4 +1,9 @@
 <!doctype html>
+<?php
+include './class/include.php';
+$id = $_GET["id"];
+$rooms = new Room($id);
+?>
 <html lang="en">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <head>
@@ -32,7 +37,7 @@
     </head>
     <body>
         <div id="page_wrapper">
-            <div class="row">
+            <div class="">
                 <!-- Header 4 Section Start -->
                 <?php include './header-top.php'; ?>
                 <!-- Header 4 Section End --> 
@@ -55,8 +60,7 @@
                     </div>
                 </div>
                 <!-- Page Banner Section End -->
-
-               <section class="full-row bg-gray">
+                <section class="full-row bg-gray">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8">
@@ -64,53 +68,82 @@
                                     <div class="img-slide">
                                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                             <div class="carousel-inner">
-                                                <div class="carousel-item active"> <img src="img/width/36.jpg" alt="Image not found!"> </div>
-                                                <div class="carousel-item"> <img src="img/width/39.jpg" alt="Image not found!"> </div>
-                                                <div class="carousel-item"> <img src="img/width/40.jpg" alt="Image not found!"> </div>
+                                                <?php
+                                                $ROOMPHOTO = RoomPhoto::getRoomPhotosById($id);
+                                                foreach ($ROOMPHOTO as $key => $roomphoto) {
+                                                    if ($key < 1) {
+                                                        ?>
+                                                        <div class="carousel-item active"> <img src="upload/room/gallery/<?php echo $roomphoto['image_name'] ?>" alt="Image not found!"> </div>
+                                                        <?php
+                                                    } else {
+                                                        ?>
+                                                        <div class="carousel-item"> <img src="upload/room/gallery/<?php echo $roomphoto['image_name'] ?>" alt="Image not found!"> </div>
+                                                        <?php
+                                                    }
+                                                }
+                                                ?>
                                             </div>
                                             <div class="slider-arrow"> <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <i class="fas fa-angle-double-left"></i> </a> <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> <i class="fas fa-angle-double-right"></i> </a> </div>
                                         </div>
                                     </div>
                                     <div class="room-detail-info bg-white">
                                         <div class="float-left">
-                                            <h3>Classic Room</h3>
-                                            <span>Classic room for our vip guest, also available for family touriest.</span> </div>
+                                            <h3><?php echo $rooms->title ?></h3>
+                                             </div>
                                         <div class="float-right text-right">
-                                            <div class="amount-per-night"><b>$172/</b> <span>night </span></div>
-                                            <div class="review"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> (20 Review) </div>
+                                            <div class="amount-per-night"><b>Rs.<?php echo $rooms->price ?>.00</b> </div>
+                                            <div class="review"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>  </div>
                                         </div>
                                     </div>
                                     <div class="text-block-1 mt-4">
-                                        <p>Ligula at posuere leo dictumst ad sollicitudin. Magna congue, leo, eros curabitur interdum ante maecen facilisis per maecenas mattis enim in nostra libero pede mauris neque varius ad ad inceptos. Erat empor amet nisl scelerisque maecenas fringilla ad ridiculus gravida. Arcu dignissim eros commodo ornare eget. Ligula congue dolor placerat, eu nibh dis dui, penatibus ac praesent tellus montes, lerisque, vulputate eros eu maecenas lobortis per orci sit Penatibus mauris senectus vulputate tincidunt cras feugiat class tempus eget ridiculus vehicula dolor praesent. Hymenaeos. Venenatis non litora feugiat suspendisse rutrum hymenaeos taciti praesent ut velit. Cum pharetra nisl nisi. Laoreet Montes.</p>
-                                        <p>Lorem suspendisse vestibulum dignissim sapien purus id massa. Dictumst. Fames commodo, metus. Parturient leo at aliquam. Tristique. Metus ultricies aliquam mi. Hendrerit libero malesuada dictumst, massa consequat Volutpat mattis condimentum ut aliquam. Magna litora augue purus class hymenaeos dis semper, suspendisse euismod vehicula vitae luctus nulla at orci nullam.</p>
+                                        <p><?php echo $rooms->description; ?></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <h3 class="top-title">Other Accomadation</h3>
                                 <div class="row">
-                                    <div class="col-md-12 col-lg-12">
-                                        <div class="post-item bg-white mb-4">
-                                            <div class="overlay-secondery-opacity-40"> <img src="img/blog/1.jpg" alt="Image not found!"></div>
-                                            <div class="post-detail p-4" style="height: 10px;">
-                                                <h6 class="title pb-3"><a href="blog-classic-single.html">Double Room</a></h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-12">
-                                        <div class="post-item bg-white mb-4">
-                                            <div class="overlay-secondery-opacity-40"> <img src="img/blog/1.jpg" alt="Image not found!"></div>
-                                            <div class="post-detail p-4" style="height: 10px;">
-                                                <h6 class="title pb-3"><a href="blog-classic-single.html">Double Room</a></h6>
-                                            </div>
-                                        </div>
-                                    </div>
+
+
+                                    <div class="widget widget_posts">
+
+                                        <ul>
+                                            <?php
+                                            $ROOM = new Room(NULL);
+                                            foreach ($ROOM->all() as $rooms) {
+                                                ?>
+                                                <li>
+                                                    <div class="post-item mb-4 bg-color box">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-5">
+                                                                <div class=""> <a href="view-accomadation.php?id=<?php echo $rooms["id"]; ?>"><img src="upload/room/<?php echo $rooms['image_name'] ?>" alt="Image not found!" ></a> </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-7 div-padding" >
+                                                                <div class="post-detail post-detail-padding">
+                                                                    <h5 class="title h5-title"><a class="text-secondery" href="view-accomadation.php?id=<?php echo $rooms["id"]; ?>"><?php echo $rooms['title'] ?></a></h5>
+                                                                    <p class="p-des"><?php echo substr($rooms['short_description'], 0, 65) ?>...</p>
+                                                                    <button>
+                                                                        <a href="view-accomadation.php?id=<?php echo $rooms["id"]; ?>">View More</a>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--wd-post end-->
+                                                </li>
+                                                <?php
+                                            }
+                                            ?>
+
+                                        </ul>
+                                    </div><!--widget_posts end-->
+
                                 </div>
 
                             </div>
                         </div>
                     </div>
                 </section>
+
                 <!-- Footer Section Start -->
                 <?php include './footer.php'; ?>
                 <!-- Footer Section End --> 
@@ -120,7 +153,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="copy-right py-4 text-white text-center"> <span>Copyright 2018 The Vilena All Rights Reserved.</span> </div>
+                                <div class="copy-right py-4 text-white text-center"> <span>Copyright 2019 Evergreen Villa All Rights Reserved.</span> </div>
                             </div>
                         </div>
                     </div>

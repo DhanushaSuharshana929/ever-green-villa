@@ -1,4 +1,7 @@
 <!doctype html>
+<?php
+include './class/include.php';
+?>
 <html lang="en">
 
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -29,13 +32,13 @@
         <link rel="stylesheet" href="webfonts/flaticon/flaticon.css">
         <link href="css/custom.css" rel="stylesheet" type="text/css"/>
         
-        <title>Evergreen Villa | Attraction</title>
+        <title>Evergreen Villa | Excursion</title>
     </head>
     <body>
        
 
         <div id="page_wrapper">
-            <div class="row">
+            <div class="">
                 <!-- Header 4 Section Start -->
             <?php include './header-top.php'; ?>
                 <!-- Header 4 Section End --> 
@@ -45,13 +48,13 @@
                     <div class="container">
                         <div class="row py-80">
                             <div class="col-sm-6">
-                                <h1 class="banner-title text-white">Place Details</h1>
+                                <h1 class="banner-title text-white">Excursion</h1>
                             </div>
                             <div class="col-sm-6">
                                 <ul class="pages-link">
                                     <li><a href="index-7.html">Home</a></li>
                                     <li>/</li>
-                                    <li>Place Details</li>
+                                    <li>Excursion</li>
                                 </ul>
                             </div>
                         </div>
@@ -87,7 +90,8 @@
                                                 <div class="overlay-secondery-opacity-40"> <span class="text-primary xy-center"><i class="fa fa-plus"></i></span> <img src="img/width/5.jpg" alt="Image not found!"> </div>
                                             </a> <a href="img/width/6.jpg" class="img_view" data-fancybox="gallery">
                                                 <div class="overlay-secondery-opacity-40"> <span class="text-primary xy-center"><i class="fa fa-plus"></i></span> <img src="img/width/6.jpg" alt="Image not found!"> </div>
-                                            </a> </div>
+                                            </a> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
